@@ -7,6 +7,7 @@ import About from './about'
 import Projects from './projects'
 import Blog from './blog'
 import Footer from './footer'
+import { GA_TRACKING_ID } from '../../lib/gtag'
 
 function Layout() {
   const [isDark, setDark] = React.useState(true)
@@ -47,6 +48,22 @@ function Layout() {
         <meta
           name="keywords"
           content="berat, berat bozkurt, front-end developer, freelance front end developer, react, next.js, react-native"
+        />
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}', {
+              page_path: window.location.pathname,
+            });
+          `
+          }}
         />
       </Head>
       <Header setDark={setDark} isDark={isDark} />
