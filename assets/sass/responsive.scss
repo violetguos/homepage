@@ -1,0 +1,354 @@
+@media (max-width: 517px) {
+  body {
+    #index {
+      header {
+        width: 95% !important;
+        flex-direction: column;
+        nav {
+          margin-top: 20px;
+          li{
+            padding: 5px !important;
+            a{
+              padding: 5px !important;
+            }
+          }
+        }
+      }
+      .container {
+        width: 90% !important;
+      }
+      section#about {
+        display: flex;
+        flex-direction: column;
+        p {
+          margin-top: 20px;
+          width: 90%;
+          font-size: 146% !important;
+          text-align: center;
+        }
+      }
+      section#projects {
+        #gits {
+          ul {
+            li {
+              width: 90% !important;
+              height: max-content !important;
+              padding: 15px !important;
+              &:nth-child(odd) {
+                margin-bottom: 20px;
+              }
+              h2 {
+                width: 74% !important;
+              }
+              .starButton {
+                top: 5px !important;
+                right: 10px !important;
+              }
+              p {
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+      section#blog {
+        ul {
+          li {
+            height: max-content !important;
+            width: 100% !important;
+            justify-content: center;
+            &:nth-child(odd) {
+              margin-bottom: 20px;
+            }
+            .blogListJustBg {
+              width: 100% !important;
+            }
+            .blogListImg {
+              width: 100% !important;
+              img {
+                width: 100% !important;
+              }
+              .blogListImgBg {
+                width: 100% !important;
+              }
+            }
+            .blogListText {
+              width: 100% !important;
+              a {
+                text-align: center;
+                font-size: 115% !important;
+                line-height: 26px;
+              }
+            }
+          }
+        }
+      }
+      section#footer {
+        flex-direction: column-reverse !important;
+        h3 {
+          margin-top: 20px !important;
+          text-align: center;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 517px) and (max-width: 768px) {
+  body {
+    #index {
+      header {
+        width: 95% !important;
+        flex-direction: column;
+        nav {
+          display: block !important;
+          margin-top: 20px;
+          li{
+            padding: 5px !important;
+            a{
+              padding: 5px !important;
+            }
+          }
+        }
+      }
+      .container {
+        width: 90% !important;
+      }
+      section#about {
+        display: flex;
+        flex-direction: column;
+        p {
+          margin-top: 20px;
+          width: 90%;
+          font-size: 146% !important;
+          text-align: center;
+        }
+      }
+      section#projects {
+        #gits {
+          ul {
+            li {
+              width: 90% !important;
+              height: max-content !important;
+              padding: 15px !important;
+              &:nth-child(odd) {
+                margin-bottom: 20px;
+              }
+              h2 {
+                width: 74% !important;
+              }
+              .starButton {
+                top: 5px !important;
+                right: 10px !important;
+              }
+              p {
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+      section#blog {
+        ul {
+          li {
+            height: max-content !important;
+            width: 100% !important;
+            justify-content: center;
+            &:nth-child(odd) {
+              margin-bottom: 20px;
+            }
+            .blogListJustBg {
+              width: 100% !important;
+            }
+            .blogListImg {
+              width: 100% !important;
+              img {
+                width: 100% !important;
+              }
+              .blogListImgBg {
+                width: 100% !important;
+              }
+            }
+            .blogListText {
+              width: 100% !important;
+              a {
+                text-align: center;
+                font-size: 115% !important;
+                line-height: 26px;
+              }
+            }
+          }
+        }
+      }
+      section#footer {
+        flex-direction: column-reverse !important;
+        h3 {
+          margin-top: 20px !important;
+          text-align: center;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 769px) and (max-width: 1030px) {
+  body {
+    #index {
+      header {
+        width: 95% !important;
+      }
+      .container {
+        width: 90% !important;
+      }
+      section#projects {
+        #gits {
+          ul {
+            li {
+              width: 45% !important;
+              height: max-content !important;
+              padding: 15px !important;
+              h2 {
+                width: 74% !important;
+              }
+              .starButton {
+                top: 5px !important;
+                right: 10px !important;
+              }
+              p {
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+      section#blog {
+        ul {
+          li {
+            height: max-content !important;
+            width: 47% !important;
+            justify-content: center;
+            .blogListJustBg {
+              width: 100% !important;
+            }
+            .blogListImg {
+              width: 100% !important;
+              img {
+                width: 100% !important;
+              }
+              .blogListImgBg {
+                width: 100% !important;
+              }
+            }
+            .blogListText {
+              width: 100% !important;
+              a {
+                text-align: center;
+                font-size: 115% !important;
+                line-height: 26px;
+              }
+            }
+          }
+        }
+      }
+      section#footer {
+        flex-direction: column-reverse !important;
+        h3 {
+          margin-top: 20px !important;
+          text-align: center;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 517px) and (max-width: 768px) {
+  body {
+    #index {
+      header {
+        width: 95% !important;
+        nav {
+          display: none;
+        }
+      }
+      .container {
+        width: 90% !important;
+      }
+      section#about {
+        display: flex;
+        flex-direction: column;
+        p {
+          margin-top: 20px;
+          width: 90%;
+          font-size: 146% !important;
+          text-align: center;
+        }
+      }
+      section#projects {
+        #gits {
+          ul {
+            li {
+              width: 90% !important;
+              height: max-content !important;
+              padding: 15px !important;
+              &:nth-child(odd) {
+                margin-bottom: 20px;
+              }
+              h2 {
+                width: 74% !important;
+              }
+              .starButton {
+                top: 5px !important;
+                right: 10px !important;
+              }
+              p {
+                line-height: 20px;
+              }
+            }
+          }
+        }
+      }
+      section#blog {
+        ul {
+          li {
+            height: max-content !important;
+            width: 100% !important;
+            justify-content: center;
+            &:nth-child(odd) {
+              margin-bottom: 20px;
+            }
+            .blogListJustBg {
+              width: 100% !important;
+            }
+            .blogListImg {
+              width: 100% !important;
+              img {
+                width: 100% !important;
+              }
+              .blogListImgBg {
+                width: 100% !important;
+              }
+            }
+            .blogListText {
+              width: 100% !important;
+              a {
+                text-align: center;
+                font-size: 115% !important;
+                line-height: 26px;
+              }
+            }
+          }
+        }
+      }
+      section#footer {
+        flex-direction: column-reverse !important;
+        h3 {
+          margin-top: 20px !important;
+          text-align: center;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

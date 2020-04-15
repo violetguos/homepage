@@ -1,0 +1,380 @@
+@import 'variable.scss';
+@import 'responsive.scss';
+
+
+body {
+  margin: 0;
+  font-family: $fontBody;
+  padding: 0;
+  .dark {
+    background-color: $darkBg;
+    .container {
+      border-color: $darkHr !important;
+    }
+    header {
+      h1 a {
+        color: $darkLink !important;
+      }
+      nav a {
+        color: $darkLink !important;
+        &:hover {
+          color: $darkMenuHover !important;
+        }
+      }
+    }
+    section#about p {
+      color: $darkLink !important;
+      a {
+        color: $darkMenuHover !important;
+      }
+    }
+    section#projects section#gits li {
+      background-color: $darkGitBg !important;
+      border-color: $darkHr !important;
+      h2 a {
+        color: $darkGitTitle !important;
+        &:hover {
+          color: $darkGitTitleHover !important;
+        }
+      }
+      .starButton {
+        background-color: $darkGitStarButtonBg !important;
+        border-color: $darkHr !important;
+        a {
+          color: $darkLink !important;
+          svg path {
+            fill: $darkLink !important;
+          }
+        }
+        &:hover {
+          color: $darkGitStarButtonHover !important;
+        }
+      }
+      p {
+        color: $darkGitDesc !important;
+      }
+      .gitBottom {
+        color: $darkGitDesc !important;
+        svg path {
+          fill: $darkGitDesc !important;
+        }
+      }
+    }
+    section#footer {
+      h3 {
+        color: $darkFooter !important;
+      }
+      svg path {
+        fill: $darkGitDesc;
+      }
+    }
+    .title {
+      color: $darkLink;
+      .viewMore {
+        border: 1px solid $darkViewMoreBorder;
+        background-color: $darkViewMoreBg;
+        a {
+          color: $darkLink;
+        }
+      }
+    }
+  }
+  .light {
+    background-color: $lightBg;
+    .title {
+      color: $lightLink;
+      .viewMore {
+        border: 1px solid $lightViewMoreBorder;
+        a {
+          color: $lightLink;
+        }
+      }
+    }
+  }
+  #index {
+    a {
+      font-family: $fontBody;
+    }
+    a.active{
+      color: $menuHover;
+    }
+    .container {
+      width: $width;
+      margin: 0px auto;
+      padding: ($largeFinger - 10) 0;
+      border-top: 1px solid $lightHr;
+      display: flex;
+    }
+    .title {
+      display: flex;
+      font-size: 26px;
+      font-weight: 400;
+      margin-bottom: $fingerSize + 10;
+      .viewMore {
+        width: 72px;
+        height: 22px;
+        border-radius: $borderRadius;
+        line-height: 27px;
+        margin-left: $fingerSize / 2;
+        a {
+          display: block;
+          text-align: center;
+          font-size: 14px;
+        }
+      }
+    }
+    header {
+      width: $width;
+      margin: 0px auto;
+      display: flex;
+      justify-content: space-between;
+      padding: $fingerSize 0;
+      align-items: center;
+      h1 {
+        font-size: 24px;
+        font-weight: 600;
+        a {
+          color: $lightLink;
+        }
+      }
+      nav {
+        ul {
+          display: flex;
+          align-items: center;
+          li {
+            padding: $menuFinger;
+            a {
+              font-size: 20px;
+              padding: $menuFinger;
+              color: $lightLink;
+              font-weight: 400;
+              &:hover {
+                color: $menuHover;
+              }
+            }
+          }
+          .darkORlight {
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    section#about {
+      align-items: center;
+      img {
+        border-radius: 50%;
+        width: 175px;
+        height: 175px;
+        object-fit: cover;
+      }
+      p {
+        font-family: $fontText;
+        font-size: 24px;
+        color: $lightLink;
+        font-weight: 400;
+        line-height: 45px;
+        padding-left: $fingerSize + 10;
+        a {
+          font-family: $fontText;
+          color: $menuHover;
+          font-style: italic;
+        }
+      }
+    }
+    section#projects {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      #gits {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: space-between;
+          li {
+            background-color: $lightGitBg;
+            border-radius: $borderRadius;
+            border: 1px solid $lightViewMoreBorder;
+            padding: 20px;
+            width: 475px;
+            height: 68px;
+            position: relative;
+            &:nth-child(even) {
+              margin-bottom: 20px;
+            }
+            h2 {
+              padding-bottom: 10px;
+              a {
+                font-size: 18px;
+                color: $lightGitTitle;
+                &:hover {
+                  color: $lightGitTitleHover;
+                }
+              }
+            }
+            p {
+              font-size: 16px;
+              color: $lightGitDesc;
+            }
+            .starButton {
+              width: 60px;
+              height: 28px;
+              background-color: $lightGitStarButton;
+              border-radius: $borderRadius;
+              border: 1px solid $lightViewMoreBorder;
+              line-height: 35px;
+              position: absolute;
+              right: 20px;
+              text-align: center;
+              top: 10px;
+              a {
+                color: $lightGitTitle;
+                font-size: 16px;
+                display: block;
+                svg {
+                  position: relative;
+                  top: 1px;
+                }
+              }
+              &:hover {
+                background-color: $lightGitStarButtonHover;
+              }
+            }
+            .gitBottom {
+              display: flex;
+              flex-direction: row;
+              padding-top: 10px;
+              align-items: center;
+              color: $lightGitDesc;
+              .gitLang {
+                font-size: 14px;
+                display: flex;
+                margin-right: 20px;
+                align-items: baseline;
+                span {
+                  width: 8px;
+                  height: 8px;
+                  border-radius: 50%;
+                  margin-right: 4px;
+                  background-color: $sun;
+                }
+              }
+              .gitStar {
+                display: flex;
+                margin-right: 20px;
+                align-items: baseline;
+                svg {
+                  margin-right: 4px;
+                }
+              }
+              .gitFork {
+                display: flex;
+                align-items: baseline;
+                margin-top: -4px;
+                margin-right: 20px;
+                svg {
+                  margin-right: 4px;
+                  position: relative;
+                  top: 2px;
+                }
+              }
+            }
+            &:hover {
+              box-shadow: $gitHover;
+            }
+          }
+        }
+      }
+    }
+    section#blog {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .blogList {
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: space-between;
+          li {
+            border-radius: $borderRadius;
+            position: relative;
+            &:nth-child(even) {
+              margin-bottom: 20px;
+            }
+            .blogListJustBg{
+              background: #222E3A;
+              width: 515px;
+              height: 118px;
+              position: relative;
+              z-index: 1;
+            }
+            .blogListImg {
+              position: relative;
+              width: 515px;
+              z-index: 1;
+              height: 118px;
+              img {
+                object-fit: cover;
+              }
+              .blogListImgBg {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 2;
+                background-color: $blogBg;
+                opacity: 0.85;
+              }
+            }
+            .blogListText {
+              position: absolute;
+              z-index: 3;
+              width: 100%;
+              height: 100%;
+              top: 0;
+              display: flex;
+              align-items: center;
+              flex-direction: column;
+              justify-content: center;
+              a {
+                color: $blogListTitle;
+                font-size: 20px;
+                font-weight: 600;
+                text-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.6);
+              }
+              .blogListTextDetail {
+                color: $lightBg;
+                padding-top: 10px;
+                font-size: 14px;
+                font-style: italic;
+              }
+            }
+          }
+        }
+      }
+    }
+    section#footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      h3 {
+        font-size: 18px;
+        font-family: $fontText;
+        color: $lightLink;
+      }
+      nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        li {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+}
