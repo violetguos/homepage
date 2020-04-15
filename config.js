@@ -5,6 +5,7 @@ module.exports = {
   twitterURL: 'https://twiter.com/beratbozkurt0',
   instagramURL: 'https://instagram.com/beratbozkurt0',
   linkedinURL: 'https://www.linkedin.com/in/beratbozkurt/',
+  vscoURL: 'https://vsco.co/beratlee',
   months: [
     'Jan',
     'Feb',
