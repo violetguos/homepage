@@ -165,8 +165,8 @@ body {
       align-items: center;
       img {
         border-radius: 50%;
-        width: 175px;
-        height: 175px;
+        min-width: 175px;
+        min-height: 175px;
         object-fit: cover;
       }
       p {
