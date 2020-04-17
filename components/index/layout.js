@@ -41,6 +41,7 @@ function Layout() {
         <title>Berat Bozkurt | Front-end Developer</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="title" content="Berat Bozkurt | Front-end Developer" />
+        <meta name="yandex-verification" content="ae0558ffdd8d3f12" />
         <meta
           name="description"
           content="Hey, I'm Berat Bozkurt, a freelance front-end developer. I've a startup named davetiyem.co"
