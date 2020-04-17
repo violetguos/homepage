@@ -9,7 +9,7 @@ function Projects() {
   const getPinnedRepos = async () => {
     const response = await fetch(
       `https://api.github.com/users/${config.githubUsername}/starred`,
-      { method: 'GET' }
+      { method: 'GET', cache: 'reload' }
     )
     const data = await response.json()
     const myPinned = data.filter(
@@ -43,7 +43,7 @@ function Projects() {
                   </Link>
                 </h2>
                 <div className="starButton">
-                  <Link href={item.html_url}  prefetch={false}>
+                  <Link href={item.html_url} prefetch={false}>
                     <a target={'_blank'}>
                       <Star /> Star
                     </a>
