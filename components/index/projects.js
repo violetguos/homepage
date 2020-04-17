@@ -9,7 +9,7 @@ function Projects() {
   const getPinnedRepos = async () => {
     const response = await fetch(
       `https://api.github.com/users/${config.githubUsername}/starred`,
-      { method: 'GET', cache: 'reload' }
+      { method: 'GET' }
     )
     const data = await response.json()
     const myPinned = data.filter(
