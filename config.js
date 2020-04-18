@@ -1,6 +1,7 @@
 module.exports = {
   githubUsername: 'berat',
   githubURL: 'https://github.com/berat',
+  mailAdress: 'me@beratbozkurt.net',
   mediumURL: 'https://medium.com/beratsblog',
   twitterURL: 'https://twiter.com/beratbozkurt0',
   instagramURL: 'https://instagram.com/beratbozkurt0',

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { Github, Twitter, Linkedin, Blog, Instagram } from '../icons'
+import { Github, Twitter, Linkedin, Blog, Instagram, At } from '../icons'
 import config from '../../config'
 
 function Footer() {
@@ -9,6 +9,13 @@ function Footer() {
       <h3>Freelance Front-End Developer - Berat Bozkurt</h3>
       <nav>
         <ul>
+          <li>
+            <Link href={`mailto:${config.mailAdress}`} prefetch={false}>
+              <a>
+                <At />
+              </a>
+            </Link>
+          </li>
           <li>
             <Link href={config.githubURL} prefetch={false}>
               <a>
