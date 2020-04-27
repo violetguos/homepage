@@ -3,7 +3,7 @@ module.exports = {
   githubURL: 'https://github.com/berat',
   mailAdress: 'me@beratbozkurt.net',
   mediumURL: 'https://medium.com/beratsblog',
-  twitterURL: 'https://twiter.com/beratbozkurt0',
+  twitterURL: 'https://twitter.com/beratbozkurt0',
   instagramURL: 'https://instagram.com/beratbozkurt0',
   linkedinURL: 'https://www.linkedin.com/in/beratbozkurt/',
   vscoURL: 'https://vsco.co/beratlee',
