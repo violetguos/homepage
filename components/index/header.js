@@ -26,6 +26,11 @@ function Header({ setDark, isDark }) {
           <li>
             <Scrollchor to="#footer">Contact</Scrollchor>
           </li>
+          <li>
+            <Link href="//berat.github.io/cv" prefetch>
+              <a>CV</a>
+            </Link>
+          </li>
           <li
             className="darkORlight"
             onClick={() => {
