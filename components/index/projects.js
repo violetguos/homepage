@@ -8,9 +8,7 @@ function Projects() {
 
   const getPinnedRepos = async () => {
     const response = await fetch(
-      `https://api.github.com/users/${config.githubUsername}/starred`,
-      { method: 'GET' }
-    )
+      `https://api.github.com/users/${config.githubUsername}/starred`)
     const data = await response.json()
     const myPinned = data.filter(
       (item) => item.owner.login === config.githubUsername
