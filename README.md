@@ -29,6 +29,8 @@ Temayı kullanmadan önce gatsby'nin nasıl kullanıldığını bilmen gerekiyor
 
 2.  **`gatsby-config.js`**: Burada bana ait olan bilgileri kendinize göre değiştirmelisiniz. Bir çok kod buradan beslenmektedir.
 
+**not:** `src/pages/photos.js` dosyasını yorum satırına aldım. Çünkü ilk önce flickr üzerinden aldığınız key'i `gatsby-config.js` içerisinde tanımlamanız gerekiyor. Daha sonra kodu aktif edebilirsiniz.
+
 ## Son bir şey
 
 Eğer temayı kullanmak isterseniz bana selam vermeyi unutmayın :)
@@ -69,6 +71,8 @@ You should to know how to use gatsby before you fork the template. Because I wil
 1.  **`/content`**: There are blog post and projects list on this folder. When you look at inside of this folder you will know how to use it. The assets is only used for favicon and profile photo.
 
 2.  **`gatsby-config.js`**: You should change the information here according to your own. Almost a lot of sections in the code are fed from here.
+
+**not:**  I hided all code in `src / pages / photos.js`. Because firstly you need to define the Flickr API key in `gatsby-config.js`. Then you can activate the code.
 
 ## Last Thing
 
