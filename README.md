@@ -14,6 +14,10 @@ Kişisel blogumu [gatsby](https://www.gatsbyjs.com/ "gatsby") ([starter-blog](ht
 - Kullanıcılarına karanlık mod özelliğini sunabilirsin
 - Webmention.io desteği
 
+
+![gtmetrix](https://beratbozkurt.net/static/4b9adc0ab011f3bc59caec01c2831a42/d30ee/cover.png)
+
+
 ##  Projedeki özel kısımlar?
 
 Temayı kullanmadan önce gatsby'nin nasıl kullanıldığını bilmen gerekiyor. Burada ise temaya özel olan kısımlardan bahsedeceğim. 
@@ -56,6 +60,10 @@ I build my homepage with [gatsby](https://www.gatsbyjs.com/ "gatsby") ([starter-
 - Share your photos with flickr
 - Dark mode
 - Webmention.io support
+
+
+![gtmetrix](https://beratbozkurt.net/static/4b9adc0ab011f3bc59caec01c2831a42/d30ee/cover.png)
+
 
 ## What's special inside?
 
