@@ -1,0 +1,77 @@
+// TYPOGRAPHY
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+$font-body: system-ui, system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+$font-heading: 'Playfair Display', serif;
+
+$font-size-root: 100%;
+$font-size-base: 1rem;
+$line-height: 1.625;
+
+
+$weight-thin: 200;
+$weight-light: 300;
+$weight-normal: 400;
+$weight-semibold: 500;
+$weight-bold: 600;
+
+
+// COLOR
+
+$main: #262b2d;
+$primary: #d46132;
+$primaryOffset: #e68157;
+$secondary : #3692a2;
+$text: #405058;
+$background: #ffffff;
+$border: #ebebeb;
+$gray: #a2a2a2;
+$textOffset: #90a2ab;
+$backgroundOffset: #f3f3f3;
+$borderOffset: #e0e0e0;
+$selection: #ffe9df;
+$selectionOffset: #ffd9c9;
+
+:root #dark {
+  --main-color: #fff;
+  --text-color: #e6e6e6;
+  --text-offset-color: #dedede;
+  --bg-color: #262b2d;
+  --primary-color: #f99b74;
+  --primary-offset-color: #{$primaryOffset};
+  --secondary-color: #{$secondary};
+  --selection-color: #da7146;
+  --selection-offset-color: #a94f2b;
+  --border-color: #575b5d;
+  --border-offset-color: #{$borderOffset};
+  --gray-color: #{$gray};
+}
+
+:root {
+  --main-color: #{$main};
+  --text-color: #{$text};
+  --text-offset-color: #{$textOffset};
+  --bg-color: #{$background};
+  --primary-color: #{$primary};
+  --primary-offset-color: #{$primaryOffset};
+  --secondary-color: #{$secondary};
+  --selection-color: #{$selection};
+  --selection-offset-color: #{$selectionOffset};
+  --border-color: #{$border};
+  --border-offset-color: #{$borderOffset};
+  --gray-color: #{$gray};
+}
+
+// SIZES
+
+$full-size: 920px;
+$sidebar-size: 350px;
+$post-size: 980px;
+
+
+// EXTRAS
+
+$radius-small: 5px;
+
+$box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.1);
+

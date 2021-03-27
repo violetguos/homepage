@@ -1,0 +1,36 @@
+section.subscriber {
+  background: var(--border-color);
+  width: 820px;
+  margin: 40px auto;
+  box-sizing: border-box;
+  border-radius: $radius-small;
+  padding: 30px 20px;
+  @include responsive(xs) {
+    width: 100%;
+  }
+  @include responsive(s) {
+    width: 100%;
+  }
+  h4 {
+    margin: 0;
+    padding: 10px 0 20px 0;
+    color: var(--main-color);
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1rem;
+    color: var(--parag-color);
+    padding-bottom: 10px;
+  }
+  a {
+    display: block;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    text-transform: uppercase;
+    font-weight: $weight-bold;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: $radius-small;
+  }
+}

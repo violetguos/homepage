@@ -1,0 +1,38 @@
+body {
+  overflow-x: hidden;
+  transition: color 0.15s, background-color 0.15s;
+
+  .container {
+    width: $full-size;
+    min-width: $full-size;
+    margin: 0px auto;
+    @include responsive(s) {
+      width: 95%;
+      min-width: 95%;
+      margin: 0px auto;
+    }
+    @include responsive(xs) {
+      width: 98%;
+      min-width: 98%;
+      margin: 0px auto;
+    }
+  }
+  #index,
+  #page {
+    display: flex;
+    transition: 0.3s;
+    flex-direction: column;
+    width: 100%;
+    min-width: $full-size;
+    margin: 0px auto;
+    gap: 50px;
+    @include responsive(s) {
+      width: 100%;
+      min-width: 100%;
+    }
+    @include responsive(xs) {
+      min-width: 100%;
+      width: 100%;
+    }
+  }
+}
