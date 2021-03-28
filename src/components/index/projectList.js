@@ -1,11 +1,10 @@
 import React from "react"
-import projects from '../../../content/projects.js'
 
-const ProjectList = () => {
+const ProjectList = ({projects, length}) => {
   return (
     <div className="index-blog">
       <ol>
-        {projects.map((item, index) => (
+        {projects.slice(0, length || projects.length).map((item, index) => (
           <li className="general-list" key={index}>
             <a href={item.url} rel="noreferrer" target="_blank">
               <header>

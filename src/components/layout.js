@@ -18,7 +18,9 @@ const Layout = ({ children, isIndex = false }) => {
               </>
             ) : null}
             {children}
-            <Footer />
+            
+              <Footer />
+
           </section>
         </div>
       )}
