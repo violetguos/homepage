@@ -9,9 +9,7 @@ export default function Footer() {
           social {
             twitter
             github
-            instagram
             linkedin
-            superpeer
           }
         }
       }
@@ -29,18 +27,12 @@ export default function Footer() {
         <a href={social.github} target="_blank" rel="noreferrer">
           github
         </a>
-        <a href={social.instagram} target="_blank" rel="noreferrer">
-          instagram
-        </a>
         <a href={social.linkedin} target="_blank" rel="noreferrer">
           linkedin
         </a>
-        <a href={social.superpeer} target="_blank" rel="noreferrer">
-          superpeer
-        </a>
       </nav>
       <div className="email">
-        <b>me</b> at <b>beratbozkurt</b> dot <b>net</b>
+        <b>violetyueguo</b> at <b>gmail</b> dot <b>com</b>
       </div>
     </footer>
   )

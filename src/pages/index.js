@@ -30,16 +30,16 @@ const BlogIndex = ({ data, location }) => {
       <section id="index">
         <SEO title={siteTitle} />
         <section className="all-post-list">
-          <h3 className="display-font">Son Yazılar</h3>
+          <h3 className="display-font">blog</h3>
           <BlogList posts={posts} length={3} isPost />
           {posts.length > 3 && (
             <Link className="index-view-more" to="/blog">
-              Diğer Yazılara Gözat <Right />
+              View more <Right />
             </Link>
           )}
         </section>
         <section className="all-project-list">
-          <h3>Projeler</h3>
+          <h3>Projects</h3>
           <ProjectList/>
         </section>
       </section>

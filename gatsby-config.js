@@ -1,24 +1,22 @@
 module.exports = {
   siteMetadata: {
-    title: `Berat Bozkurt`,
-    indexTitle: "Berat Bozkurt | front-end developer",
+    title: `Violet Guo`,
+    indexTitle: "software engineer | web | machine learning",
     author: {
-      name: `Berat Bozkurt`,
+      name: `Violet Guo`,
       info:
-        "I'm Berat Bozkurt. I'm 21 years old. I'm a developer. I love to write about anything. Don't forget to subscribe me and if you love the article, please like and comment, Hi youtube!",
+        "I'm a SWE",
       summary: `Freelancer, front-end developer, open source, writing, tweeting, shutterbug`,
     },
-    description: `Berat Bozkurt, front-end developer, photography, blogging`,
-    siteUrl: `https://beratbozkurt.net/`,
+    description: `Violet Guo, front-end developer, photography, blogging`,
+    siteUrl: `https://violetguos.github.io`,
     social: {
-      twitter: `https://twitter.com/beratbozkurt0`,
-      vsco: "https://vsco.co/beratbozkurt0",
+      twitter: `https://twitter.com/yvioletguo`,
       github: "https://github.com/berat",
-      instagram: "https://instagram.com/beratbozkurt0",
       linkedin: "https://www.linkedin.com/in/beratbozkurt/",
-      superpeer: "https://superpeer.com/berat",
-      flickr: "https://www.flickr.com/photos/beratbozkurt0/",
-      substack: "https://beratbozkurt.substack.com/subscribe",
+      // superpeer: "https://superpeer.com/berat",
+      // flickr: "https://www.flickr.com/photos/beratbozkurt0/",
+      // substack: "",
     },
   },
   plugins: [
@@ -32,7 +30,7 @@ module.exports = {
       resolve: "gatsby-source-flickr",
       options: {
         api_key: process.env.FLICKR_API_KEY,
-        user_id: "beratbozkurt0"
+        user_id: "realvioletg"
       }
     },
     `gatsby-plugin-sass`,
@@ -77,14 +75,14 @@ module.exports = {
           {
             resolve: `gatsby-plugin-webmention`,
             options: {
-              username: "beratbozkurt.net", // webmention.io username
+              username: "violetguos.github.io", // webmention.io username
               identity: {
-                github: "berat",
-                twitter: "beratbozkurt0", // no @
+                github: "violetguos",
+                twitter: "yvioletguo", // no @
               },
               mentions: true,
               pingbacks: true,
-              domain: "beratbozkurt.net",
+              domain: "violetguos.github.io",
               token: process.env.WEBMENTIONS_TOKEN,
             },
           },
@@ -134,7 +132,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: `UA-163663946-1`,
+        trackingId: `G-KG3PXM2G9B`,
         head: true,
       },
     },
@@ -142,8 +140,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Berat Bozkurt - front-end developer`,
-        short_name: `BeratBozkurt`,
+        name: `Violet Guo - software engineer`,
+        short_name: `VioletGuo`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#e4561b`,

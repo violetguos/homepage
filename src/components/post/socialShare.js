@@ -23,7 +23,7 @@ export default function SocialShare({ fullURL, title, onLike, like }) {
     <div className="bottom-article">
       <div className="share-post">
         <a
-          href={`https://twitter.com/intent/tweet?url=${fullURL}&via=beratbozkurt0&text=${title}`}
+          href={`https://twitter.com/intent/tweet?url=${fullURL}&via=yvioletguo&text=${title}`}
           target="_blank"
           rel="noreferrer"
         >

@@ -5,7 +5,7 @@ import Image from "gatsby-image"
 const Welcome = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      avatar: file(absolutePath: { regex: "/profile-pic.PNG/" }) {
         childImageSharp {
           fixed(width: 475, height: 475, quality: 95) {
             ...GatsbyImageSharpFixed
@@ -21,7 +21,6 @@ const Welcome = () => {
           social {
             twitter
             github
-            vsco
           }
         }
       }
@@ -43,22 +42,18 @@ const Welcome = () => {
           className="bio-avatar"
         />
       )}
-      <h2>Selam, ben Berat</h2>
+      <h2>Hi there</h2>
       <p className="display-font">
-        front-end developer olarak çalışıyorum. Ayrıca yararlı bulduğum
-        içerikleri ve deneyimlerimi{" "}
+        SWE machine learning{" "}
         <a href={twitter} rel="noreferrer" target="_blank">
           twitter
         </a>
-        'da, açık kaynak projelerimi{" "}
+        i code{" "}
         <a href={github} rel="noreferrer" target="_blank">
           github
         </a>
-        'ta, gözüme güzel gelen her şeyi{" "}
-        <a href={vsco} rel="noreferrer" target="_blank">
-          vsco
-        </a>
-        'da paylaşıyorum.
+        
+        and more.
       </p>
     </section>
   )
