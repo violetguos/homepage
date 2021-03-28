@@ -13,12 +13,12 @@ const NotFoundPage = ({ data, location }) => {
         <SEO title="404: Not Found" />
         <section id="not-found">
           <h1>
-            404: Bulunamadı{" "}
+            404: not found{" "}
             <span role="img" aria-label="emoji">
               😔
             </span>
           </h1>
-          <p>Yolunu kaybettin, doğru yerde misin? Kontrol et.</p>
+          <p>Sorry, perhaps you'd like to visit the homepage?</p>
         </section>
       </Layout>
     </section>

@@ -4,25 +4,27 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout.js"
 import SEO from "../components/seo.js"
-import BlogList from "../components/index/blogList.js"
+import ProjectList from "../components/index/projectList.js"
+import projects from '../../content/projects.js'
+
 
 const About = ({ data, location }) => {
-  console.log("location", location)
-  const [isFilter, setFilter] = useState("Tümü")
+  const [isFilter, setFilter] = useState("All")
+  console.log(location)
   const siteTitle = data.site.siteMetadata?.title || `Title`
 
-  const posts = data.blog.nodes
-  const categories = ["Tümü", "Yazılım", "Kişisel"]
+  
+  const categories = ["All", "web", "machine learning", "data science"]
 
   const filterByCategory =
-    isFilter && isFilter !== "Tümü"
-      ? posts.filter(item => item.frontmatter.category.indexOf(isFilter) + 1)
-      : posts
+    isFilter && isFilter !== "All"
+      ? projects.filter(item => item.category.indexOf(isFilter) + 1)
+      : projects
 
-  if (posts.length === 0) {
+  if (projects.length === 0) {
     return (
       <Layout location={location} title={siteTitle}>
-        <SEO title={"Blog"} />
+        <SEO title={"Projects"} />
         <p>
           No blog posts found. Add markdown posts to "content/blog" (or the
           directory you specified for the "gatsby-source-filesystem" plugin in
@@ -35,10 +37,10 @@ const About = ({ data, location }) => {
   return (
     <section id="page">
       <Layout location={location} title={siteTitle}>
-        <SEO title={"Blog"} />
-        <section id="blog-page">
+        <SEO title={"Projects"} />
+        <section>
           <section className="category-filter">
-            <h4>Kategoriler : </h4>
+            <h4>categories : </h4>
             <ul>
               {categories.map((item, index) => (
                 <li
@@ -52,8 +54,8 @@ const About = ({ data, location }) => {
               ))}
             </ul>
           </section>
-          <section className="all-post-list">
-            <BlogList posts={filterByCategory} isPost />
+          <section className="all-project-list">
+            <ProjectList projects={filterByCategory} isPost />
           </section>
         </section>
       </Layout>

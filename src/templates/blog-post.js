@@ -100,7 +100,7 @@ const BlogPostTemplate = ({ data, location }) => {
             itemProp="articleBody"
           />
         </article>
-        <Subscriber substackUrl={data.site.siteMetadata.social.substack}/>
+        {/* <Subscriber substackUrl={data.site.siteMetadata.social.substack}/> */}
         <SocialShare
           fullURL={fullURL}
           title={post.frontmatter.title}
@@ -139,7 +139,7 @@ const BlogPostTemplate = ({ data, location }) => {
                 rel="noreferrer"
               >
                 <TwitterIcon width="21" height="21" fill="white" />
-                <b>Twitter'da Bahset</b>
+                <b>Twitter</b>
               </a>
             )}
           </h2>
@@ -173,9 +173,6 @@ export const pageQuery = graphql`
         author {
           name
           info
-        }
-        social {
-          substack
         }
       }
     }

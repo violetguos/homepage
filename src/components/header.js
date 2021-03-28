@@ -30,13 +30,13 @@ const Header = () => {
         {theme => (
           <nav id="navigation">
             <Link activeClassName="active" to="/about">
-              hakkımda
+              about
             </Link>
             <Link activeClassName="active" to="/blog">
               blog
             </Link>
-            <Link activeClassName="active" to="/photos">
-              fotoğraflar
+            <Link activeClassName="inactive" to="/">
+              projects
             </Link>
             <button onClick={theme.toggleBlack}>
               {!theme.black ? (
