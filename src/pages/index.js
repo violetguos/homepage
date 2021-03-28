@@ -29,7 +29,7 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} isIndex>
       <section id="index">
         <SEO title={siteTitle} />
-        <section className="all-post-list">
+        {/* <section className="all-post-list">
           <h3 className="display-font">blog</h3>
           <BlogList posts={posts} length={3} isPost />
           {posts.length > 3 && (
@@ -37,7 +37,7 @@ const BlogIndex = ({ data, location }) => {
               View more <Right />
             </Link>
           )}
-        </section>
+        </section> */}
         <section className="all-project-list">
           <h3>Projects</h3>
           <ProjectList/>

@@ -1,9 +1,9 @@
 {
-  "name": "beratbozkurt-net-blog",
+  "name": "violetguo-portofolio",
   "private": true,
   "description": "personal blog with gatsby",
   "version": "0.1.0",
-  "author": "Berat Bozkurt <me@beratbozkurt.net>",
+  "author": "Violet Guo <vio@no-reply.org>",
   "bugs": {
     "url": "https://github.com/berat/beratbozkurt.net"
   },

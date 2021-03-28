@@ -12,8 +12,8 @@ module.exports = {
     siteUrl: `https://violetguos.github.io`,
     social: {
       twitter: `https://twitter.com/yvioletguo`,
-      github: "https://github.com/berat",
-      linkedin: "https://www.linkedin.com/in/beratbozkurt/",
+      github: "https://github.com/violetguos",
+      linkedin: "https://www.linkedin.com/in/yvioletguo/",
       // superpeer: "https://superpeer.com/berat",
       // flickr: "https://www.flickr.com/photos/beratbozkurt0/",
       // substack: "",

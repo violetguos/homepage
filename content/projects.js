@@ -1,30 +1,30 @@
 module.exports = [
   {
-    name: "Davetiyem.co",
-    description: "Evlenmeyi düşünen çiftlerin dijital düğün davetiyesini oluşturabildiği bir platform.",
-    keywords: ["React", "Next.js", "Node.js", "PostgreSQL"],
-    url: 'https://github.com/berat/Davetiyem.co-React',
-    icon: '📎'
+    name: "Mem[e]mory card game",
+    description: "this is probably the most fun side project I had so far. Functionality: Select doges from doge cards!! ",
+    keywords: ["React"],
+    url: 'https://violetguos.github.io/memory_card/',
+    icon: '🐶'
   },
   {
-    name: "Homepage",
-    description: "Kendi kişisel blogum için hazırlamış olduğum açık kaynak gatsby projesi.",
-    keywords: ["Gatsby", "React", "Next.js"],
-    url: 'https://github.com/berat/homepage',
-    icon: '🏠'
+    name: "Eventpriv",
+    description: "Invite friends to your private events!! No more pesty DMs! ",
+    keywords: ["Ruby", "Rails", "Bulma"],
+    url: 'https://github.com/violetguos/eventpriv',
+    icon: '👥'
   },
   {
-    name: "WordBox",
-    description: "İngilizce kelimeyi ezberlemeyi kolaylaştıran açık kaynak bir react native uygulama.",
-    keywords: ["React Native", "Figma"],
+    name: "Flight booker",
+    description: "book tickets for multiple passengers. Integrated Stripe API for Ruby",
+    keywords: ["Ruby", "Rails", "Stripe"],
     url: 'https://github.com/berat/wordBox-react-native',
-    icon: '🃏'
+    icon: '✈️'
   },
   {
-    name: "Covid App",
-    description: "Covid ile genel bilgilerin gösterildiği basit bir react native uygulaması.",
-    keywords: ["React Native"],
-    url: 'https://github.com/berat/covid-app-react-native',
-    icon: '🦠'
+    name: "Music box",
+    description: "Dynamic Gif display based on your music.",
+    keywords: ["JavaScript"],
+    url: 'https://yayinternet.github.io/hw4-music-box-violetguos/',
+    icon: '🎶'
   }
 ]
