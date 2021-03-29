@@ -35,7 +35,7 @@ const Header = () => {
             <Link activeClassName="active" to="/blog">
               blog
             </Link>
-            <Link activeClassName="inactive" to="/">
+            <Link activeClassName="inactive" to="/project">
               projects
             </Link>
             <button onClick={theme.toggleBlack}>

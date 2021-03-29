@@ -7,6 +7,7 @@ module.exports = [
     url: 'https://violetguos.github.io/memory_card/',
     icon: '🐶'
   },
+  // rails
   {
     name: "Eventpriv",
     description: "Invite friends to your private events!! No more pesty DMs! ",
@@ -23,6 +24,7 @@ module.exports = [
     url: 'https://github.com/berat/wordBox-react-native',
     icon: '✈️'
   },
+  // Vanilla JS
   {
     name: "Music box",
     description: "Dynamic Gif display based on your music.",
@@ -30,5 +32,106 @@ module.exports = [
     category: "web dev",
     url: 'https://yayinternet.github.io/hw4-music-box-violetguos/',
     icon: '🎶'
+  },
+  {
+    name: "Flash cards",
+    dscription: "A set of flash cards, swipe right to learn CSS & Korean.",
+    keywords: ["JavaScript", "CSS", "HTML"],
+    category: "web dev",
+    url: 'https://yayinternet.github.io/hw3-flashcards-violetguos/',
+    icon: '📇'
+  },
+  {
+    name: "Personality Quiz",
+    description: "Find a puppy based on your personality!",
+    keywords: ["HTML", "CSS", "JavaScript"],
+    category: "web dev",
+    url: 'https://yayinternet.github.io/hw2-quiz-ext-violetguos/',
+    icon: '🐶'
+  },
+  {
+    name: "Tic Tac Toe",
+    description: "Classic tic tac toe, aka naughts and crosses. Also a classic UI exercise.",
+    keywords: ["HTML", "CSS", "JavaScript"],
+    category: "web dev",
+    url: 'https://violetguos.github.io/js-odin/tic-tac-toe/',
+    icon: '⭕️'
+  },
+  {
+    name: "Rock paper scissor",
+    description: "Classic rock paper scissor. Also a classic UI project.",
+    keywords: ["HTML", "CSS", "JavaScript"],
+    category: "web dev",
+    url: 'https://violetguos.github.io/chifoumi/',
+    icon: '🔨'
+  },
+  {
+    name: "etch a sketch",
+    description: "the ipad of our times.",
+    keywords: ["HTML", "CSS", "JavaScript"],
+    category: "web dev",
+    url: 'https://violetguos.github.io/etch-a-sketch/',
+    icon: '👩‍🎨'
+  },
+  // Pure CSS
+  {
+    name: "mock Youtube",
+    description: "Mocks the UI of Youtube. Built without any UI framework.",
+    keywords: ["HTML", "CSS"],
+    category: "web dev",
+    url: 'https://violetguos.github.io/html-css/youtube/index.html',
+    icon: '📺'
+  },
+  {
+    name: "IOS calculator on the web",
+    description: "Replica of the iOS 12 calculator. Built without any UI framework.",
+    keywords: ["HTML", "CSS", "JavaScript"],
+    category: "web dev",
+    url: 'https://violetguos.github.io/web-calc/',
+    icon: '🧮'
+  },
+  // deep learning
+  {
+    name: "Speaker Accent Classification",
+    description: "Classify the accents of audiobook with CNN and RNN.",
+    keywords: ["Praat", "PyTorch", "Python"],
+    category: "deep learning",
+    url: 'https://github.com/violetguos/project-ift6390',
+    icon: '🗣'
+  },
+  {
+    name: "Multi-digit street number bounding box segmentation and classification",
+    description: "Use a pretrained Faster RCNN to segment street numbers and a ResNet to classify the digits.",
+    keywords: ["PyTorch", "ResNet", "Faster RCNN"],
+    category: "deep learning",
+    url: 'https://github.com/violetguos/humanware',
+    icon: '🚪',
+  },
+  {
+    name: "Building deep learning NLP models from scratch",
+    description: "Built RNN, GRU, transformer from scratch (without using the predefined cells in Pytorch)!",
+    keywords: ["Pytorch"],
+    category: "deep learning",
+    url: 'https://github.com/violetguos/ift6135-rnn',
+    icon: '🗞'
+  },
+
+  // data science
+  {
+    name: "Basic NLP algorithms",
+    description: "Sentiment analysis and decoding ciphers",
+    keywords: ["NLP", "NLTK"],
+    category: "NLP",
+    url: 'https://github.com/violetguos/nlp',
+    icon: '📑'
+  },
+  {
+    name: "Fake news detections",
+    description: "Linear, ensemble, and neural network models to perform multi-class classification on news articles.",
+    keywords: ["NLP", "LSTM"],
+    category: "NLP",
+    url: 'https://github.com/violetguos/COMP550-Project',
+    icon: '🗞',
   }
+
 ]
