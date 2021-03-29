@@ -96,4 +96,22 @@ section.all-project-list {
       font-size: 1.1rem;
     }
   }
+  .index-view-more {
+    max-width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: $weight-semibold;
+    font-size: 1.1rem;
+    margin-top: 30px;
+    color: var(--primary-color);
+    gap: 5px;
+    align-items: center;
+    animation: shake 3s cubic-bezier(0.1, 0.1, 0.1, 0.1) both infinite;
+    @include responsive(s) {
+      margin-left: 20px;
+    }
+    @include responsive(xs) {
+      margin-left: 20px;
+    }
+  }
 }
