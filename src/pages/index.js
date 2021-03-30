@@ -34,8 +34,8 @@ const BlogIndex = ({ data, location }) => {
         
         <section className="all-project-list">
           <h3>Projects</h3>
-          <ProjectList projects={projects} length={3}/>
-          {projects.length > 3 && (
+          <ProjectList projects={projects} length={4}/>
+          {projects.length > 4 && (
             <Link className="index-view-more" to="/project">
               View more <Right />
             </Link>
