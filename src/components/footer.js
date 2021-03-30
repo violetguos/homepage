@@ -35,7 +35,7 @@ export default function Footer() {
         </a>
       </nav>
       <div className="email">
-        <b>violetyueguo</b> at <b>gmail</b> dot <b>com</b>
+        <b>hello</b> at <b>violetyguo</b> dot <b>me</b>
       </div>
     </footer>
   )
