@@ -3,7 +3,7 @@ import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout.js"
 import SEO from "../components/seo.js"
-import BlogList from "../components/index/blogList.js"
+// import BlogList from "../components/index/blogList.js"
 import ProjectList from "../components/index/projectList.js"
 import Right from "../assets/icons/arrow-right.svg"
 import projects from '../../content/projects.js'
@@ -41,7 +41,7 @@ const BlogIndex = ({ data, location }) => {
             </Link>
           )}
         </section>
-        <section className="all-post-list">
+        {/* <section className="all-post-list">
           <h3 className="display-font">blog</h3>
           <BlogList posts={posts} length={3} isPost />
           {posts.length > 3 && (
@@ -49,7 +49,7 @@ const BlogIndex = ({ data, location }) => {
               View more <Right />
             </Link>
           )}
-        </section>
+        </section> */}
       </section>
     </Layout>
   )
