@@ -27,7 +27,7 @@ export default function SearchBox(props) {
   }
 
   const onClick = e => {
-    console.log("State'teki değerimiz: ", text) 
+    console.log("State'teki değerimiz: ", text)
   }
 
   return (

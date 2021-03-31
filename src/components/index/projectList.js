@@ -1,6 +1,6 @@
 import React from "react"
 
-const ProjectList = ({projects, length}) => {
+const ProjectList = ({ projects, length }) => {
   return (
     <div className="index-blog">
       <ol>
@@ -11,20 +11,17 @@ const ProjectList = ({projects, length}) => {
                 <h2>
                   <span itemProp="headline">{item.name}</span>
                 </h2>
-                <b>
-                  {item.icon}
-                </b>
+                <b>{item.icon}</b>
               </header>
               <ul>
-                {item.keywords.map((tag, key) => <li key={key}>{tag}</li>)}
+                {item.keywords.map((tag, key) => (
+                  <li key={key}>{tag}</li>
+                ))}
               </ul>
-              <p>
-                {item.description}
-              </p>
-              </a>
+              <p>{item.description}</p>
+            </a>
           </li>
-        )
-        )}
+        ))}
       </ol>
     </div>
   )

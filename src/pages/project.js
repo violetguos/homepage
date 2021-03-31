@@ -5,8 +5,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout.js"
 import SEO from "../components/seo.js"
 import ProjectList from "../components/index/projectList.js"
-import projects from '../../content/projects.js'
-
+import projects from "../../content/projects.js"
 
 const About = ({ data, location }) => {
   const [isFilter, setFilter] = useState("All")
