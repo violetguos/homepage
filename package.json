@@ -1,0 +1,72 @@
+{
+  "name": "violetguo-portfolio",
+  "private": true,
+  "description": "personal blog with gatsby",
+  "version": "0.1.0",
+  "author": "Violet Guo <hello@violetyguo.me>",
+  "bugs": {
+    "url": "https://github.com/violetguos/homepage"
+  },
+  "dependencies": {
+    "@akr4/gatsby-plugin-og-image": "^1.0.5",
+    "autoprefixer": "^9.8.6",
+    "gatsby": "^2.26.1",
+    "gatsby-image": "^2.5.0",
+    "gatsby-plugin-feed": "^2.7.0",
+    "gatsby-plugin-google-analytics": "^2.5.0",
+    "gatsby-plugin-manifest": "^2.6.1",
+    "gatsby-plugin-offline": "^3.4.0",
+    "gatsby-plugin-printer": "1.0.8",
+    "gatsby-plugin-react-helmet": "^3.4.0",
+    "gatsby-plugin-react-svg": "^3.0.0",
+    "gatsby-plugin-sass": "^2.6.0",
+    "gatsby-plugin-sharp": "^2.8.0",
+    "gatsby-plugin-sitemap": "^2.8.0",
+    "gatsby-plugin-twitter": "^2.6.0",
+    "gatsby-plugin-webmention": "^0.2.0",
+    "gatsby-remark-copy-linked-files": "^2.4.0",
+    "gatsby-remark-embed-youtube": "^0.0.7",
+    "gatsby-remark-images": "^3.5.1",
+    "gatsby-remark-reading-time": "^1.1.0",
+    "gatsby-remark-responsive-iframe": "^2.5.0",
+    "gatsby-remark-smartypants": "^2.4.0",
+    "gatsby-remark-vscode": "^3.2.1",
+    "gatsby-source-filesystem": "^2.5.0",
+    "gatsby-source-flickr": "^0.0.4",
+    "gatsby-transformer-remark": "^2.10.0",
+    "gatsby-transformer-sharp": "^2.6.0",
+    "moment": "^2.29.1",
+    "node-sass": "^4.0.0",
+    "prism-themes": "^1.5.0",
+    "prismjs": "^1.22.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1",
+    "react-images": "1.0.0",
+    "react-photo-gallery": "^8.0.0",
+    "typeface-merriweather": "0.0.72",
+    "typeface-montserrat": "0.0.75"
+  },
+  "devDependencies": {
+    "prettier": "2.1.2"
+  },
+  "homepage": "https://github.com/berat/beratbozkurt.net#readme",
+  "keywords": [
+    "gatsby",
+    "homepage,"
+  ],
+  "license": "0BSD",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berat/beratbozkurt.net.git"
+  },
+  "scripts": {
+    "build": "yarn format && gatsby build",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "deploy": "gatsby build && gh-pages -d public -b master"
+  }
+}

@@ -1,0 +1,20 @@
+nav.blog-post-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 40px 0 10px 0;
+  gap: 20px;
+  li {
+    background: var(--border-color);
+    border-radius: $radius-small;
+    list-style: none;
+    padding: 20px 00px;
+    a {
+      font-weight: $weight-bold;
+      font-size: 1.05rem;
+      font-family: $font-heading;
+      padding: 20px 20px;
+    }
+  }
+}

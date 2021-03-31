@@ -1,0 +1,41 @@
+.bottom-article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 30px 0;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--border-color);
+  @include responsive(xs) {
+    width: 95%;
+    margin: 30px auto;
+  }
+
+  .share-post {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    .copy-icon {
+      fill: var(--main-color);
+      align-self: flex-start;
+      &:hover {
+        cursor: copy;
+      }
+    }
+  }
+  .like-count {
+    button {
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      font-weight: $weight-bold;
+      font-size: 1.2rem;
+      outline: none;
+
+      svg {
+        fill: var(--primary-color);
+      }
+    }
+  }
+}

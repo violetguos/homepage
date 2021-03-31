@@ -1,0 +1,21 @@
+blockquote {
+  background-color: var(--border-color);
+  padding: 15px 15px 15px 20px;
+  margin: 20px 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-left: 5px solid var(--gray-color);
+  br {
+    content: "";
+    margin: 3em;
+    display: block;
+    font-size: 24%;
+  }
+  p{
+    margin-bottom: 0 !important;
+  }
+  code{
+    background: var(--border-offset-color) !important;
+    color: var(--bg-color) !important;
+  }
+}
