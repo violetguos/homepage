@@ -1,4 +1,5 @@
 module.exports = [
+  // top candidates
   {
     name: "Mem[e]mory card game",
     description: "this is probably the most fun side project I had so far. Functionality: Select doges from doge cards!! ",
@@ -6,6 +7,36 @@ module.exports = [
     category: "web dev",
     url: 'https://violetguos.github.io/memory_card/',
     icon: '🐶'
+  },
+
+  {
+    name: "Speaker Accent Classification",
+    description: "Classify the accents of audiobook with CNN and RNN.",
+    keywords: ["Praat", "PyTorch", "Python"],
+    category: "deep learning",
+    url: 'https://github.com/violetguos/project-ift6390',
+    icon: '🗣'
+  },
+
+  {
+    name: "Fake news detections",
+    description: "Linear, ensemble, and neural network models to perform multi-class classification on news articles.",
+    keywords: ["NLP", "LSTM"],
+    category: "NLP",
+    url: 'https://github.com/violetguos/COMP550-Project',
+    icon: '🗞',
+  },
+
+  // the rest of the projects
+  // react
+
+  {
+    name: "Online CV",
+    description: "Fill out a simple form and present your online CV",
+    keywords: ["React"],
+    category: "web dev",
+    url: 'https://violetguos.github.io/cv-react',
+    icon: '💼'
   },
   // rails
   {
@@ -42,7 +73,7 @@ module.exports = [
     icon: '📇'
   },
   {
-    name: "Personality Quiz",
+    name: "Adopt your pup",
     description: "Find a puppy based on your personality!",
     keywords: ["HTML", "CSS", "JavaScript"],
     category: "web dev",
@@ -90,15 +121,8 @@ module.exports = [
     url: 'https://violetguos.github.io/web-calc/',
     icon: '🧮'
   },
+
   // deep learning
-  {
-    name: "Speaker Accent Classification",
-    description: "Classify the accents of audiobook with CNN and RNN.",
-    keywords: ["Praat", "PyTorch", "Python"],
-    category: "deep learning",
-    url: 'https://github.com/violetguos/project-ift6390',
-    icon: '🗣'
-  },
   {
     name: "Multi-digit street number bounding box segmentation and classification",
     description: "Use a pretrained Faster RCNN to segment street numbers and a ResNet to classify the digits.",
