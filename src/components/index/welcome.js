@@ -44,8 +44,9 @@ const Welcome = () => {
       )}
       <h2>Hi there</h2>
       <p className="display-font">
-        I'm a software engineer and a machine learning engineer. 
-        I can dive deep into machine learning (deep or classic) models and papers, and I also productionize them. 
+        I'm a software engineer and a machine learning engineer. I can dive deep
+        into machine learning (deep or classic) models and papers, and I also
+        productionize them.
         {/* saving how Berat links
          <a href={github} rel="noreferrer" target="_blank">
           github

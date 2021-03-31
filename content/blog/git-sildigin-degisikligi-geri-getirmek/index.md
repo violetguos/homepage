@@ -12,6 +12,7 @@ Eğer yaptığınız değişikliği `git add` yaptıysanız dosyalar hashlenmiş
 ```bash
   git fsck --lost-found
 ```
+
 bu kodu kullanarak hashlenmiş olan önceki değişikliği geri getirin. Bu kodu yazdıktan sonra size aşağıdaki gibi bir çıktı oluşturuyor. Aslında bu çıktının aynısı `.git/lost-found` klasörü içinde de kayıt ediyor.
 
 ```bash
@@ -22,9 +23,9 @@ dangling tree 8cc268a3f48c08cd95329fcd73cc306***********
 dangling commit ef7fe1814a47fbf89cbcbb1ce39e4***********
 ```
 
-Çok güzel, yaptığımız değişikliklerin hash'lerine ulaşmış olduk. Şimdi `git cat-file` diye bir komuttan yardım alacağız. Bu kod kısacası, yapılan değişikliklerin içerik, tür ve boyut bilgilerini sağlıyor. 
+Çok güzel, yaptığımız değişikliklerin hash'lerine ulaşmış olduk. Şimdi `git cat-file` diye bir komuttan yardım alacağız. Bu kod kısacası, yapılan değişikliklerin içerik, tür ve boyut bilgilerini sağlıyor.
 
-Önce geri getirmek istediğimiz değişikliğin hangisi olduğunu öğrenmek istiyoruz. Bunun için aşağıdaki kodu yazıp commit mesajınıza bakarak doğru bir hash olduğunu doğrulayabilirsiniz. 
+Önce geri getirmek istediğimiz değişikliğin hangisi olduğunu öğrenmek istiyoruz. Bunun için aşağıdaki kodu yazıp commit mesajınıza bakarak doğru bir hash olduğunu doğrulayabilirsiniz.
 
 > **ef7fe181** ifadesi yukarıdaki hash çıktılarının ilk 7 hanesidir.
 
@@ -38,7 +39,7 @@ committer Berat Bozkurt <beratbozkurt1999@gmail.com> 1614455618 +0300
 upload files
 ```
 
-Daha sonra ise aynı işlemi bu kez tree hash'ini yazarak devam ediyoruz. 
+Daha sonra ise aynı işlemi bu kez tree hash'ini yazarak devam ediyoruz.
 
 ```bash
 ➜ git cat-file -p dafb6a5f
@@ -55,7 +56,7 @@ Daha sonra ise aynı işlemi bu kez tree hash'ini yazarak devam ediyoruz.
 100755 blob 52c5fa66a84de8b4387803ec20c8***********	yarn.lock
 ```
 
-Artık hangi kısımdaki değişiklikler kaybolduysa oradaki içerikleri kolay bir şekilde alabiliriz. Onun için yine aynı kodu kullanıyoruz. 
+Artık hangi kısımdaki değişiklikler kaybolduysa oradaki içerikleri kolay bir şekilde alabiliriz. Onun için yine aynı kodu kullanıyoruz.
 
 ```bash
 ➜ git cat-file -p  4b412a3
@@ -70,5 +71,5 @@ Gördüğünüz gibi dosya içeriğini görmüş oluyoruz. Benim edindiğim tecr
 
 ### Kaynaklar
 
-- [Git accidentally deleted all of my changes (Stackoverflow)](https://stackoverflow.com/a/19628406/8745473) 
+- [Git accidentally deleted all of my changes (Stackoverflow)](https://stackoverflow.com/a/19628406/8745473)
 - [Git inside: Direct work with git objects](https://githowto.com/git_internals_working_directly_with_git_objects)

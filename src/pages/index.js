@@ -6,13 +6,12 @@ import SEO from "../components/seo.js"
 // import BlogList from "../components/index/blogList.js"
 import ProjectList from "../components/index/projectList.js"
 import Right from "../assets/icons/arrow-right.svg"
-import projects from '../../content/projects.js'
-
+import projects from "../../content/projects.js"
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.indexTitle || `Title`;
+  const siteTitle = data.site.siteMetadata?.indexTitle || `Title`
 
-  const posts = data.blog.nodes;
+  const posts = data.blog.nodes
 
   if (posts.length === 0) {
     return (
@@ -31,10 +30,10 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} isIndex>
       <section id="index">
         <SEO title={siteTitle} />
-        
+
         <section className="all-project-list">
           <h3>Projects</h3>
-          <ProjectList projects={projects} length={4}/>
+          <ProjectList projects={projects} length={4} />
           {projects.length > 4 && (
             <Link className="index-view-more" to="/project">
               View more <Right />

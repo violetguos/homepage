@@ -1,8 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import moment from 'moment'
-import 'moment/locale/tr';
-
+import moment from "moment"
+import "moment/locale/tr"
 
 const BlogList = ({ posts, length, isPost }) => {
   const currentDate = moment().format("YYYY-MM-DD")
@@ -13,7 +12,8 @@ const BlogList = ({ posts, length, isPost }) => {
         {posts.slice(0, length || posts.length).map(post => {
           const title = post.frontmatter.title || post.fields.slug
           var categories = isPost ? post.frontmatter.category : null
-          var isNewPost = moment(post.frontmatter.date).diff(currentDate, 'days') > -4
+          var isNewPost =
+            moment(post.frontmatter.date).diff(currentDate, "days") > -4
 
           return (
             <li key={post.fields.slug}>
@@ -32,8 +32,10 @@ const BlogList = ({ posts, length, isPost }) => {
                         </h2>
                         <div className="top-of-header">
                           <small>
-                          {moment(post.frontmatter.date).locale("tr").format("DD MMMM YYYY")} -{" "}
-                            {post.fields.readingTime.text}
+                            {moment(post.frontmatter.date)
+                              .locale("tr")
+                              .format("DD MMMM YYYY")}{" "}
+                            - {post.fields.readingTime.text}
                           </small>
                           <ul>
                             {categories?.length > 0 &&
@@ -45,15 +47,18 @@ const BlogList = ({ posts, length, isPost }) => {
                       </div>
                     </header>
                   ) : (
-                      <header>
-                        <h2>
-                          <span itemProp="headline">{title}</span>
-                        </h2>
-                        <small>
-                          {moment(post.frontmatter.date).locale("tr").format("DD MMMM YYYY")} - {post.fields.readingTime.text}
-                        </small>
-                      </header>
-                    )}
+                    <header>
+                      <h2>
+                        <span itemProp="headline">{title}</span>
+                      </h2>
+                      <small>
+                        {moment(post.frontmatter.date)
+                          .locale("tr")
+                          .format("DD MMMM YYYY")}{" "}
+                        - {post.fields.readingTime.text}
+                      </small>
+                    </header>
+                  )}
                   <section>
                     <p
                       dangerouslySetInnerHTML={{

@@ -4,11 +4,10 @@ module.exports = {
     indexTitle: "software engineer | web | machine learning",
     author: {
       name: `Violet Guo`,
-      info:
-        "I'm a SWE",
-      summary: `Freelancer, front-end developer, open source, writing, tweeting, shutterbug`,
+      info: "machine learning, swe",
+      summary: `machine learning, swe`,
     },
-    description: `Violet Guo, front-end developer, photography, blogging`,
+    description: `Violet Guo`,
     siteUrl: `https://violetguos.github.io`,
     social: {
       twitter: `https://twitter.com/yvioletguo`,
@@ -26,13 +25,13 @@ module.exports = {
         output: `/sitemap.xml`,
       },
     },
-    {
-      resolve: "gatsby-source-flickr",
-      options: {
-        api_key: process.env.FLICKR_API_KEY,
-        user_id: "realvioletg"
-      }
-    },
+    // {
+    //   resolve: "gatsby-source-flickr",
+    //   options: {
+    //     api_key: process.env.FLICKR_API_KEY,
+    //     user_id: "realvioletg",
+    //   },
+    // },
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -109,14 +108,15 @@ module.exports = {
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
-          }, {
+          },
+          {
             resolve: `gatsby-remark-vscode`,
             options: {
               theme: {
-                default: 'Quiet Light',
-                parentSelector: { 'div#dark': 'Monokai Dimmed' }
+                default: "Quiet Light",
+                parentSelector: { "div#dark": "Monokai Dimmed" },
               },
-            }
+            },
           },
           {
             resolve: `gatsby-remark-images`,
