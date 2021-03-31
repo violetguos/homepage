@@ -115,6 +115,14 @@ module.exports = [
     url: 'https://github.com/violetguos/ift6135-rnn',
     icon: '🗞'
   },
+  {
+    name: "Predict User Identity from ECG Signals",
+    description: "Used semi-supervised learning and VAE to predict identity of users based on ECG signals",
+    keywords: ["Pytorch", "VAE"],
+    category: "deep learning",
+    url: 'https://github.com/violetguos/OMsignal',
+    icon: '🩺'
+  },
 
   // data science
   {
@@ -132,6 +140,17 @@ module.exports = [
     category: "NLP",
     url: 'https://github.com/violetguos/COMP550-Project',
     icon: '🗞',
+  },
+  // ruby
+  {
+    name: "Chess",
+    description: "command line chess game",
+    keywords: ["Ruby", "rspec"],
+    category: "Ruby",
+    url: 'https://github.com/violetguos/cmdline-chess',
+    icon: '♔'
+
   }
+
 
 ]
