@@ -1,11 +1,11 @@
 {
-  "name": "violetguo-portofolio",
+  "name": "violetguo-portfolio",
   "private": true,
   "description": "personal blog with gatsby",
   "version": "0.1.0",
-  "author": "Violet Guo <vio@no-reply.org>",
+  "author": "Violet Guo <hello@violetyguo.me>",
   "bugs": {
-    "url": "https://github.com/berat/beratbozkurt.net"
+    "url": "https://github.com/violetguos/homepage"
   },
   "dependencies": {
     "@akr4/gatsby-plugin-og-image": "^1.0.5",
@@ -66,6 +66,7 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   }
 }

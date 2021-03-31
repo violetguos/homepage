@@ -44,16 +44,12 @@ const Welcome = () => {
       )}
       <h2>Hi there</h2>
       <p className="display-font">
-        SWE machine learning{" "}
-        <a href={twitter} rel="noreferrer" target="_blank">
-          twitter
-        </a>
-        i code{" "}
-        <a href={github} rel="noreferrer" target="_blank">
+        I'm a software engineer and a machine learning engineer. 
+        I can dive deep into machine learning (deep or classic) models and papers, and I also productionize them. 
+        {/* saving how Berat links
+         <a href={github} rel="noreferrer" target="_blank">
           github
-        </a>
-        
-        and more.
+        </a> */}
       </p>
     </section>
   )

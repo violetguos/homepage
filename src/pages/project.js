@@ -10,10 +10,7 @@ import projects from '../../content/projects.js'
 
 const About = ({ data, location }) => {
   const [isFilter, setFilter] = useState("All")
-  console.log(location)
   const siteTitle = data.site.siteMetadata?.title || `Title`
-
-  
   const categories = ["All", "web dev", "deep learning", "NLP"]
 
   const filterByCategory =
