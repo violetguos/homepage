@@ -53,7 +53,7 @@ const BlogList = ({ posts, length, isPost }) => {
                       </h2>
                       <small>
                         {moment(post.frontmatter.date)
-                          .locale("tr")
+                          .locale("en")
                           .format("DD MMMM YYYY")}{" "}
                         - {post.fields.readingTime.text}
                       </small>
