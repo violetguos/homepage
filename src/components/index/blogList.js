@@ -33,7 +33,7 @@ const BlogList = ({ posts, length, isPost }) => {
                         <div className="top-of-header">
                           <small>
                             {moment(post.frontmatter.date)
-                              .locale("tr")
+                              .locale("en")
                               .format("DD MMMM YYYY")}{" "}
                             - {post.fields.readingTime.text}
                           </small>

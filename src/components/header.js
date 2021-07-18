@@ -32,9 +32,9 @@ const Header = () => {
             <Link activeClassName="active" to="/about">
               about
             </Link>
-            {/* <Link activeClassName="active" to="/blog">
+            <Link activeClassName="active" to="/blog">
               blog
-            </Link> */}
+            </Link>
             <Link activeClassName="inactive" to="/project">
               projects
             </Link>

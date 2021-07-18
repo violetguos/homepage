@@ -8,14 +8,14 @@ import BlogList from "../components/index/blogList.js"
 
 const About = ({ data, location }) => {
   console.log("location", location)
-  const [isFilter, setFilter] = useState("Tümü")
+  const [isFilter, setFilter] = useState("tech")
   const siteTitle = data.site.siteMetadata?.title || `Title`
 
   const posts = data.blog.nodes
-  const categories = ["Tümü", "Yazılım", "Kişisel"]
+  const categories = ["tech"]
 
   const filterByCategory =
-    isFilter && isFilter !== "Tümü"
+    isFilter && isFilter !== "tech"
       ? posts.filter(item => item.frontmatter.category.indexOf(isFilter) + 1)
       : posts
 
@@ -38,7 +38,7 @@ const About = ({ data, location }) => {
         <SEO title={"Blog"} />
         <section id="blog-page">
           <section className="category-filter">
-            <h4>Kategoriler : </h4>
+            <h4>Category : </h4>
             <ul>
               {categories.map((item, index) => (
                 <li
