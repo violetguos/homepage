@@ -20,7 +20,7 @@ const BlogPostTemplate = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
   const categories = post.frontmatter.category
   const { previous, next, webmention } = data
-  const fullURL = `${data.site.siteMetadata?.siteUrl}blog${post.fields.slug}`
+  const fullURL = `${data.site.siteMetadata?.siteUrl}/blog${post.fields.slug}`
   const commentCount = webmention.nodes?.filter(
     m => m.wmProperty === "in-reply-to"
   ).length
