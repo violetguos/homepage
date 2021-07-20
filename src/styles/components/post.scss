@@ -102,6 +102,11 @@ article.blog-post {
     a {
       color: var(--primary-color);
     }
+    table, th, td {
+      // added by me to make the table more readable
+      // TODO: design a smooth corner and add more visual effects
+      border: 1px solid var(--border-color);
+    }
     h1,
     h2,
     h3,
