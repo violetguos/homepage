@@ -183,7 +183,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         category
-        date(formatString: "DD MMMM YYYY", locale: "tr")
+        date(formatString: "DD MMMM YYYY", locale: "en")
         coverImage {
           publicURL
           childImageSharp {

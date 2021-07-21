@@ -2,7 +2,7 @@
 title: "How virtual hiring transformed the coding interview process"
 date: "2021-03-25"
 coverImage: "./cover.jpg"
-categories: ["interview"]
+category: ["interview"]
 ---
 
 TLDR: unfortunately, virtual hiring is far from perfect and it does not fix many problems tech has had for years.
