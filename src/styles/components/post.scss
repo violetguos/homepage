@@ -141,6 +141,7 @@ article.blog-post {
       display: flex;
       white-space: nowrap;
       align-items: center;
+      width: 100%;
 
       &:before {
         width: 3%;
@@ -158,6 +159,12 @@ article.blog-post {
         content: "";
         margin-left: 14px;
       }
+
+      @include responsive(xs){
+        // a trick to display multi-line subheadings in blog posts
+        font-size: 1.5rem;
+        
+        white-space: pre-wrap;  }
     }
     h1 {
       // border-bottom: 2px solid var(--border-color);
