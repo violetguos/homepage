@@ -7,15 +7,14 @@ import SEO from "../components/seo.js"
 import BlogList from "../components/index/blogList.js"
 
 const About = ({ data, location }) => {
-  console.log("location", location)
-  const [isFilter, setFilter] = useState("tech")
+  const [isFilter, setFilter] = useState("all")
   const siteTitle = data.site.siteMetadata?.title || `Title`
 
   const posts = data.blog.nodes
-  const categories = ["tech", "interview", "freelancing"]
+  const categories = ["all", "tech", "interview", "freelancing", "machine learning"]
 
   const filterByCategory =
-    isFilter && isFilter !== "tech"
+    isFilter && isFilter !== "all"
       ? posts.filter(item => item.frontmatter.category.indexOf(isFilter) + 1)
       : posts
 

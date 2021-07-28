@@ -8,6 +8,9 @@ const BlogList = ({ posts, length, isPost }) => {
 
   return (
     <div className="index-blog">
+      {/* the blog list is displayed with list. we disable the bullets inline
+      does not affect the bullet lists inside blogposts */}
+      {/* <ol style={{listStyle: "none"}}> */}
       <ol>
         {posts.slice(0, length || posts.length).map(post => {
           const title = post.frontmatter.title || post.fields.slug

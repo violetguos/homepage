@@ -54,6 +54,13 @@ article.blog-post {
       width: 95%;
       margin: 0px auto;
     }
+    // ol style added by me
+    // align and show the number
+    // global is in rebot.scss
+    ol {
+      padding-left: 20px;
+      list-style: decimal;
+    }
     hr {
       display: flex;
       border: 0;
