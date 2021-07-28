@@ -37,7 +37,7 @@ const About = ({ data, location }) => {
         <SEO title={"Blog"} />
         <section id="blog-page">
           <section className="category-filter">
-            <h4>Category : </h4>
+            <h4>Category:</h4>
             <ul>
               {categories.map((item, index) => (
                 <li

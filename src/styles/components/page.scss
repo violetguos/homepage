@@ -21,8 +21,6 @@ section#page-content {
   @include responsive(xs) {
     width: 95%;
     margin: 50px auto 30px;
-    
-
   }
 
   h4 {
@@ -31,7 +29,7 @@ section#page-content {
     font-weight: $weight-bold;
     font-family: $font-body;
     @include responsive(xs) {
-      font-size: 1.1rem;
+      font-size: 1.1em;
     }
   }
   ul {
@@ -39,7 +37,8 @@ section#page-content {
     padding: 0;
     display: flex;
     gap: 10px;
-    margin-left: 15px;
+    margin-left: 10px;
+    flex-wrap: wrap; // for category tags
     
     li {
       cursor: pointer;
