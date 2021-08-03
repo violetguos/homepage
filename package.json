@@ -44,7 +44,8 @@
     "react-images": "1.0.0",
     "react-photo-gallery": "^8.0.0",
     "typeface-merriweather": "0.0.72",
-    "typeface-montserrat": "0.0.75"
+    "typeface-montserrat": "0.0.75",
+    "react-obfuscate": "^2.1.4"
   },
   "devDependencies": {
     "gh-pages": "^3.1.0",
@@ -67,6 +68,6 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build && gh-pages -d public -b master --repo git@github.com:violetguos/violetguos.github.io.git"
+    "deploy": "yarn format && gatsby build && gh-pages -d public -b master --repo git@github.com:violetguos/violetguos.github.io.git"
   }
 }

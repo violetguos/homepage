@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Obfuscate from "react-obfuscate"
 import LinkedinIcon from "../assets/icons/linkedin.svg"
 import GithubIcon from "../assets/icons/github.svg"
 import TwitterIcon from "../assets/icons/twitter.svg"
@@ -34,8 +35,10 @@ export default function Footer() {
           <LinkedinIcon width="21" height="21" fill="#1966c2" />
         </a>
       </nav>
+
       <div className="email">
-        <b>hello</b> at <b>violetyguo</b> dot <b>me</b>
+        Please reach out here:{" "}
+        <Obfuscate email={process.env.REACT_APP_CONTACT_EMAIL} />
       </div>
     </footer>
   )
