@@ -6,6 +6,7 @@ category: ["machine learning"]
 ---
 
 While I love what I do, here's a very quick laundry list of the reality of machine learning in industry.
+
 ```
 1. Chasing after publication and research grants
     - The peer review process is broken. Read more [here](https://www.reddit.com/r/MachineLearning/comments/hiv3vf/d_the_machine_learning_community_has_a_toxicity/)
