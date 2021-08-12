@@ -37,7 +37,7 @@ export default function Footer() {
       </nav>
 
       <div className="email">
-        Please reach out here:{" "}
+        Please reach out:{" "}
         <Obfuscate email={process.env.REACT_APP_CONTACT_EMAIL} />
       </div>
     </footer>
