@@ -29,6 +29,16 @@ module.exports = [
     icon: "🗞",
   },
 
+  {
+    name: "multilingual learning game",
+    description:
+      "Kids' language learning game built from scratch. Submitted to code jam.",
+    keywords: ["code jam", "game"],
+    category: "web dev",
+    url: "https://itch.io/jam/top-jam-1/rate/1149862",
+    icon: "🔡",
+  },
+
   // the rest of the projects
   // react
 
