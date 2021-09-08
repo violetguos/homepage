@@ -1,5 +1,5 @@
 ---
-title: "Why you should always negotiate your salary"
+title: "Why You Should Always Negotiate Your Salary"
 date: "2021-07-23"
 coverImage: "./cover.jpg"
 category: ["interview"]

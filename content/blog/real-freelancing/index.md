@@ -1,13 +1,13 @@
 ---
-title: "Remote Freelancing isn’t Worth the Hype"
+title: "Remote Contracting isn’t Worth the Hype"
 date: "2021-03-23"
 coverImage: "./cover.jpg"
-category: ["freelancing"]
+category: ["contracting"]
 ---
 
 The pandemic has pushed for digital adaptation in the workplace, and the market simply isn’t hiring due to the recession. More employees have to embrace odd and temporary jobs. This combination of temporary work + remote work gives rise to remote contracting/freelancing.
 
-Remote freelancing hence received some [raving reviews](https://www.forbes.com/sites/jonyounger/2020/05/29/remote-is-a-powerful-growth-driver-for-freelancing-32-platform-ceos-explain-why/?sh=79f135b919cd). Some even call this new workforce the _digital nomad_. I had the experience of being a remote contracting software developer. However, I’m here to tell you that it’s not worth the hype.
+Remote contracting hence received some [raving reviews](https://www.forbes.com/sites/jonyounger/2020/05/29/remote-is-a-powerful-growth-driver-for-freelancing-32-platform-ceos-explain-why/?sh=79f135b919cd). Some even call this new workforce the _digital nomad_. I had the experience of being a remote contracting software developer. However, I’m here to tell you that it’s not worth the hype.
 
 ## Lack of mentorship
 
