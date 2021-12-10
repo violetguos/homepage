@@ -17,6 +17,7 @@ const About = ({ data, location }) => {
     "interview",
     "freelancing",
     "machine learning",
+    "fun",
   ]
 
   const filterByCategory =
