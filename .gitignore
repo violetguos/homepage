@@ -1,6 +1,6 @@
 ## customized by me
-# draft blog posts named with prefix 'draft'
-content/blog/draft*
+# draft blog posts 
+draft/
 
 # Logs
 logs
