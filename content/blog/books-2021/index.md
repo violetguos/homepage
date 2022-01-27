@@ -1,7 +1,7 @@
 ---
 title: "The Books I've Read in 2021"
 date: "2022-01-26"
-coverImage: "./read.jpg"
+coverImage: "./read.jpeg"
 category: ["fun"]
 ---
 
