@@ -9,33 +9,36 @@ category: ["machine learning"]
 
 In order to alleviate the hardships of people with vision loss when navigating through a city, the Humanware project aims to create an application to identify text and numbers in real time using the camera of a phone. In the previous two blocks, the open source dataset that was used provides a ground truth bounding box of the address number, therefore previous blocks always have access to the digit’s location. However, in order to adapt the application for deployment, we need to consider that street numbers are embedded on many different backgrounds, and the extraction of digit location must be done before digit classification.
 
-For the third block of the project, we tried to automate the generation of boundary boxes around a zone of interest containing address numbers. To obtain the bounding boxes, we compared two image segmentation models using the implementation of *Faster RCNN* [7] algorithms found in the *Facebook* repository[4]. To evaluate the usability of our models as bounding box generators, we used an existing digit recognition model (ResNet [2] from Bounding Box) and compared its accuracy when using the true boxes and our predicted boxes.
+For the third block of the project, we tried to automate the generation of boundary boxes around a zone of interest containing address numbers. To obtain the bounding boxes, we compared two image segmentation models using the implementation of _Faster RCNN_ [7] algorithms found in the _Facebook_ repository[4]. To evaluate the usability of our models as bounding box generators, we used an existing digit recognition model (ResNet [2] from Bounding Box) and compared its accuracy when using the true boxes and our predicted boxes.
 
 Our final model is an end-to-end task that uses Faster-RCNN to find the bounding box of an address in an image and feeds it to a ResNet model from Bounding Box for digit recognition. More details about the previous model are given in Section 3.3. We obtained a mean Average Precision of 89.6% with Faster-RCNN, 70.0% validation accuracy on Bounding Box ResNet [2] model using ground-truth boxes, and 70.3% validation accuracy when combining the generated bounding boxes to the ResNet model.
 
 The following report is split as follows. Section 2 presents the previous and current datasets and their format. Section 3 includes the methodology and describes the used algorithms and their hyperparameters for detection and sequence recognition. Section 4 presents the final results we obtained with each model and an analysis comparing them to each other and previous results. Section 5 explores new approaches that could enhance the results of our models.
 
 # Dataset
+
 In this section, we briefly introduce the SVHN dataset used by Bounding Box and present the synthetic dataset we use in this block.
 
 ## Street View House Numbers Dataset (SVHN)
+
 The SVHN [5] Dataset contains over 600k images of house numbers obtained from Google Street View. Each image is cropped to focus on the house numbers and individual bounding boxes are given for each digit. This dataset is limited by the lack of negative examples (e.g. no digits present, blocked digits) and lack of background (images are too zoomed in).
 
 ## Element AI Synthetic dataset
 
-We aim to improve the robustness of Bounding Box models with the synthetic dataset and eliminate the limitations of SVHN. The dataset we used to train the segmentation task is composed of 6000 synthetic images containing a rendering of houses and a house number. The dataset is split in a 5:1 *train to validation* ratio and contains different angles and viewpoints that are not present in SVHN, allowing for a better representation of real-world applications. However, this dataset has new flaws that were not seen in SVHN:
+We aim to improve the robustness of Bounding Box models with the synthetic dataset and eliminate the limitations of SVHN. The dataset we used to train the segmentation task is composed of 6000 synthetic images containing a rendering of houses and a house number. The dataset is split in a 5:1 _train to validation_ ratio and contains different angles and viewpoints that are not present in SVHN, allowing for a better representation of real-world applications. However, this dataset has new flaws that were not seen in SVHN:
 
 - The renders are not photorealistic.
 - The dataset is orders of magnitude smaller than SVHN
 - There are only a few different house models.
 - The house numbers are only three or four digit long.
 - There is only one font used for the house numbers.
-- Some digits are hidden by objects (*Figure 1a*) and are impossible to classify.
-- Some images contain cropped digits (*Figure 1b*) or no address at all (*Figure 1c*) and are impossible to classify.
+- Some digits are hidden by objects (_Figure 1a_) and are impossible to classify.
+- Some images contain cropped digits (_Figure 1b_) or no address at all (_Figure 1c_) and are impossible to classify.
 
 These limitations will affect our models if they were to be used on real world images and the accuracy should drop. However, the dataset is adequate for a proof of concept before translating and adapting the work to real data.
 
 # Algorithms and Methodology
+
 In Bounding Box modoeling, the goal was to predict the length of each sequence as well as transcribing digits correctly while the ground truth bounding boxes of address numbers were provided. In the third block, the bounding boxes are not provided, so our first task is to generate the 2 bounding boxes by an object detection model and then send the generated boxes to the sequence digit recognition model in Bounding Box.
 
 Object detection is the process of finding and classifying different objects in an image. To do this, we use the architecture named Faster RCNN described in Subsection 3.2.
@@ -54,11 +57,12 @@ Faster RCNN couples a stable convolutional neural network (CNN) model, such as R
 
 The metric used to compare our bounding boxes to the given boxes for each image is the IoU, or Intersection over Union. This metric first takes the ratio between the area contained in both boxes and the area contained in either box. This ratio is then compared to a threshold between 0 and 1. If the IoU is over the threshold, the predicted box is considered a correct box. The metric used to evaluate the Faster-RCNN models is the mean Average Precision (mAP)[4]. The mAP is the average of the precision values for IoU thresholds from 0.5 to 0.95 (with a step of 0.05).
 
-*IoU* =area of overlap / area of union
+_IoU_ =area of overlap / area of union
 
 $mAP = \frac{1}{10}\sum_{j=1}^{10}AP(IoU = 0.45+0.05 \times j)$
 
 ## Bounding Box Model
+
 ResNet is a type of convolutional neural network with skipping layer residual connections that has proven to excel in ImageNet competitions and other various computer vision tasks [2]. ResNet34 and ResNet50 are two varations of the architecture, where 34 and 50 indicate the number of residual connections respectively. In order to prevent overfitting, we apply early stopping during training with patience ranging from 20 to 1/3 of total epochs (refer to Section 3.3 for details).
 
 The bounding box model (see Figure 4) implements feature extraction with ResNet, and after feature extraction, we would obtain a fixed length vector. Then, in order to predict both digit sequence length and digit classification, Bounding Box implements multi-task learning, which connects the feature vector to 6 different branches, where each branch contains a fully connected (FC) layer. Branch 1 is used to predict the sequence length, and the other 5 branches predict the content in each position of the sequence. If we obtain a sequence length less than 5, we simply truncate the final output [1]. This truncation approach ensures that we can apply the same model for sequences with varying lengths.
@@ -81,32 +85,33 @@ Tables 1 and 2 contain the value of hyperparameters we used.
 
 Table 1: Hyperparameters for Bounding Box model
 
-| Hyperparameter | Range |
-| --- | --- |
-| Learning Rate (LR) | [0.0001,0.01] |
-| Momentum | [0.90,0.91] |
-| Weight Decay | [0.0001, 0.001] |
-| Decay steps | [10000, 10001] |
-| Decay Rate | [0.89, 0.90] |
-| Features-O-size | [3000,6000] |
-| Batch size | 32 |
-| Epochs | [50, 400] |
-| Patience | [20, 1/3 total epoch] |
-| LR milestones | [20, 40, 80] |
-| LR Gamma | 0.1 |
+| Hyperparameter     | Range                 |
+| ------------------ | --------------------- |
+| Learning Rate (LR) | [0.0001,0.01]         |
+| Momentum           | [0.90,0.91]           |
+| Weight Decay       | [0.0001, 0.001]       |
+| Decay steps        | [10000, 10001]        |
+| Decay Rate         | [0.89, 0.90]          |
+| Features-O-size    | [3000,6000]           |
+| Batch size         | 32                    |
+| Epochs             | [50, 400]             |
+| Patience           | [20, 1/3 total epoch] |
+| LR milestones      | [20, 40, 80]          |
+| LR Gamma           | 0.1                   |
 
 Table 2: Hyperparameters for Faster RCNN
 
-| Hyperparameter | Range |
-| --- | --- |
-| Base Learning Rate(LR) | {0.0025, 0.002} |
-| Weight Decay | 0.0001 |
-| Steps | (2400, 3200) |
-| Batch size-train | 2 |
-| Batch size-test | 1 |
-| Max-Iterations | {3600, 7200, 14400} |
+| Hyperparameter         | Range               |
+| ---------------------- | ------------------- |
+| Base Learning Rate(LR) | {0.0025, 0.002}     |
+| Weight Decay           | 0.0001              |
+| Steps                  | (2400, 3200)        |
+| Batch size-train       | 2                   |
+| Batch size-test        | 1                   |
+| Max-Iterations         | {3600, 7200, 14400} |
 
 # Results and Analysis
+
 This section presents our results obtained we the different models we trained.
 
 **4.1** **Faster RCNN Bounding Box Segmentation results**
@@ -115,10 +120,10 @@ The results of the best object detection models are presented in table 3. The di
 
 Table 3: The mean Average Precision (mAP) when using the validation dataset for the two Faster RCNN models we trained for 14400 iterations.
 
-| Model | mAP |
-| --- | --- |
-| R-50-FPN | 86.7% |
-| R-101-FPN |  89.6% |
+| Model     | mAP   |
+| --------- | ----- |
+| R-50-FPN  | 86.7% |
+| R-101-FPN | 89.6% |
 
 We notice that the training loss for R-101-FPN is generally slightly lower than the loss for R-50-FPN. Both these losses reach a plateau around 0.01 after 10000 iterations, as shown in figure 5.
 
@@ -130,11 +135,9 @@ Attempted transfer learning
 
 We attempted loading checkpoint weights as an initialization. The results show no significant improvement, largely due to particularities of the ElementAI dataset described in Section 2.
 
-
 **Faster RCNN and Block 2 Pipeline Results: Impacts of Bounding Box**
 
 The sequence transcription accuracy is expected to drop when using predicted bounding box from Faster-RCNN versus using ground truth bounding box for Block 2 ResNet. After inspecting the vali-dation accuracy, the difference is merely 0.3%, therefore the pipeline does not hinder the performance significantly.
-
 
 # Conclusion and further directions
 
@@ -147,6 +150,7 @@ We notice that the performance of same architecture on ElementAI dataset drops b
 To increase performance and robustness of our model, semi-supervised representation learning techniques such as the ones proposed by Salimans et al. [8] can be used. To reduce the prediction time, real-time models such as YOLO [6] and SSD [3] can be used.
 
 # Authors (alphabetical order)
+
 - Saber Benchalel
 - Violet Guo
 - Marzieh Mehdlzadeh

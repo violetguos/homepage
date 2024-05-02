@@ -11,14 +11,7 @@ const About = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
 
   const posts = data.blog.nodes
-  const categories = [
-    "all",
-    "tech",
-    "interview",
-    "freelancing",
-    "machine learning",
-    "fun",
-  ]
+  const categories = ["all", "machine learning", "tech", "fun"]
 
   const filterByCategory =
     isFilter && isFilter !== "all"
