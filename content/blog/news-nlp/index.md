@@ -7,7 +7,7 @@ category: ["machine learning"]
 
 # Author's Note
 
-I wanted to reflect on this past project. My team decided to join an existing machine learning competition where the source data and a base line model was provided to us. The following was our original report. I have omitted the citations and some diagrams, but they are available upon request.
+I wanted to reflect on this past project. My team decided to join an existing machine learning competition where the source data and a base line model was provided to us. The following is an excerpt from an original report written by Étienne Girard-Proulx, Violet Guo, and Matthew Lesko-Krleza (in alphabetical order). I have omitted the citations and some diagrams, but they are available upon request.
 
 # Introduction
 
