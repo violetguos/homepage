@@ -1,7 +1,7 @@
 ---
 title: "Predicting ECG Signal from Unlabelled Data"
 date: "2023-09-26"
-coverImage: "./math.png"
+coverImage: "./math.jpg"
 category: ["machine learning"]
 ---
 
