@@ -63,4 +63,8 @@ Every team that tried deep learning models got similar results, with the user pr
 
 This is a classic example where deep learning is not always superior. As machine learning engineers working in industry, it is extremely important to take domain expertise and constraints into consideration.
 
+Variational autoencoders typically do not learn contextual representations within a time window. ECG signals are time series data with a cyclical nature. VAEs and its family of generative and discriminative models are prodomininatly applied in computer vision, where there is very little emphasis on previous contexts. There is a fundamental mismatch between the nature of the dataset and the features that are learned by VAEs.
+
+It is possible to explore VAE in this domain by adding more contextual information into the input data for VAEs. For example, transformers have positional encodings to mitigate the loss of time related context. Later variations of the transformer, such as BERT, introduced learnable position embeddings. We could have investigated how to better represent the ECG signals' position in the sequence, so the VAEs can be aware of the context.
+
 The quotes are excerpts from an original report written by Étienne Girard-Proulx, Violet Guo, and Jean-Philippe Letendre (in alphabetical order).
