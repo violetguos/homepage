@@ -44,6 +44,7 @@
     "react-obfuscate": "^2.1.4",
     "react-photo-gallery": "^8.0.0",
     "sass": "^1.44.0",
+    "sharp": "^0.34.2",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75"
   },

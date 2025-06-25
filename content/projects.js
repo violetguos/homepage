@@ -30,6 +30,16 @@ module.exports = [
   },
 
   {
+    name: "Analysis of Ablation Treatment for Peripheral Arterial Disease",
+    description:
+      "I used a curve smoothing algorithm to extract the peak puncture force from time series data.",
+    keywords: ["MATLAB", "research"],
+    category: "research",
+    url: "https://youtu.be/6PBpviSTpRs",
+    icon: "⚡️",
+  },
+
+  {
     name: "multilingual learning game",
     description:
       "Kids' language learning game built from scratch. Submitted to code jam.",
