@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Obfuscate from "react-obfuscate"
 import LinkedinIcon from "../assets/icons/linkedin.svg"
 import GithubIcon from "../assets/icons/github.svg"
-import TwitterIcon from "../assets/icons/twitter.svg"
+import YoutubeIcon from "../assets/icons/youtube.svg"
 
 export default function Footer() {
   const data = useStaticQuery(graphql`
@@ -11,7 +11,7 @@ export default function Footer() {
       site {
         siteMetadata {
           social {
-            twitter
+            youtube
             github
             linkedin
           }
@@ -25,8 +25,8 @@ export default function Footer() {
   return (
     <footer>
       <nav id="social">
-        <a href={social.twitter} target="_blank" rel="me noreferrer">
-          <TwitterIcon width="21" height="21" />
+        <a href={social.youtube} target="_blank" rel="me noreferrer">
+          <YoutubeIcon width="21" height="21" />
         </a>
         <a href={social.github} target="_blank" rel="noreferrer">
           <GithubIcon width="21" height="21" />

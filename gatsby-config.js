@@ -13,12 +13,11 @@ module.exports = {
     description: `Violet Guo`,
     siteUrl: `https://violetguos.github.io`,
     social: {
-      twitter: `https://twitter.com/yvioletguo`,
+      youtube: "https://www.youtube.com/@codebuzz-v1d",
       github: "https://github.com/violetguos",
       linkedin: "https://www.linkedin.com/in/yvioletguo/",
-      // superpeer: "https://superpeer.com/berat",
-      // flickr: "https://www.flickr.com/photos/beratbozkurt0/",
       // substack: "",
+      // twitter: ``,
     },
   },
   plugins: [

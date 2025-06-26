@@ -22,29 +22,47 @@ const About = ({ data, location }) => {
             </span>
           </p>
           <p>
-            I am a machine learning engineer and a data scientist. I worked on
-            challenging aspects of data science and machine learning, e.g.
+            I am a software engineer with 5 years of full stack development
+            experience, and 2 years of applied machine learning experience. My
+            past work spans multiple domains.
           </p>
           <ul>
             <li>
-              Tackled data including audio, images, time series, health care
-              data, natural languages, chemical molecules
+              Machine learning: Tackled data including audio, images, time
+              series, health care data, natural languages, chemical molecules
             </li>
             <li>
-              Maintained modular Python code with test suites (unit tests,
-              integration, and coding style)
+              Full stack development: identity management (SSO, OAuth), APIs for
+              delivery and fulfillment platforms.
+            </li>
+            <li>Privacy: data governance, advertising signals</li>
+          </ul>
+          <p>In terms of tech stack, I have worked with the following</p>
+          <ul>
+            <li>
+              Programming: Python, SQL, Bash, React, Go, GraphQL, JavaScript,
+              TypeScript, Git
             </li>
             <li>
-              Tackled challenging scenarios, such as datasets with few labels
+              Data: Airflow, Snowflake, BigQuery, Looker, LookML, PyTorch,
+              Tensorflow
             </li>
+            <li>
+              Tools: Terraform, Protobuf, gRPC, Open API, AWS, Bazel, Docker,
+              Jenkins, Jira, CI/CD, Google Cloud
+            </li>
+            <li>Monitoring: Datadog, Prometheus, Grafana, Sentry</li>
           </ul>
           <p>
-            I also build websites. It started as a hobby, but now I'm determined
-            to become a full stack (Rails + JS) dev.
+            It's a pleasure meeting you. If you'd like to learn more about my
+            work, please checkout my{" "}
+            <a href="https://www.youtube.com/@codebuzz-v1d" target="_blank">
+              Youtube channel
+            </a>{" "}
+            where I explain my projects in depth.
           </p>
           <p>
-            I'm still learning front end dev. This website is based on a
-            template designed and developed by{" "}
+            This website is based on a template designed by{" "}
             <a href="https://github.com/berat/homepage" target="_blank">
               Berat Bozkurt
             </a>
