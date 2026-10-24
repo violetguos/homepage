@@ -58,3 +58,13 @@ div.gatsby-resp-iframe-wrapper{
   background-color: var(--selection-color);
   color: var(--main-color);
 }
+
+// Reduced motion: stop the shake, the pulse and the color fades
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}

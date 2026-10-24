@@ -41,20 +41,25 @@ section#page-content {
     flex-wrap: wrap; // for category tags
     
     li {
-      cursor: pointer;
       margin: 0;
       list-style: none;
+    }
+    .chip {
+      cursor: pointer;
+      color: var(--main-color);
       background-color: var(--border-color);
       border-radius: $radius-small;
+      font-family: inherit;
       font-size: 1rem;
+      line-height: inherit;
       padding: 5px 10px;
       font-weight: $weight-bold;
-      &.active {
+      &[aria-pressed="true"] {
         background-color: var(--primary-color);
         color: var(--bg-color);
       }
       @include responsive(xs){
-        fint-size: 0.9rem;
+        font-size: 0.9rem;
         padding: 3px 7px;
       }
     }
