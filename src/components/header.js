@@ -38,11 +38,27 @@ const Header = () => {
             <Link activeClassName="inactive" to="/project">
               projects
             </Link>
-            <button onClick={theme.toggleBlack}>
+            <button
+              type="button"
+              aria-label="Dark mode"
+              aria-pressed={theme.black}
+              onClick={theme.toggleBlack}
+            >
               {!theme.black ? (
-                <Moon width="20" fill="#656565" stroke="#656565" />
+                <Moon
+                  width="20"
+                  fill="#656565"
+                  stroke="#656565"
+                  aria-hidden="true"
+                  focusable="false"
+                />
               ) : (
-                <Sun stroke="#FFCC33" width="20" />
+                <Sun
+                  stroke="#FFCC33"
+                  width="20"
+                  aria-hidden="true"
+                  focusable="false"
+                />
               )}
             </button>
           </nav>

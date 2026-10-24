@@ -1,6 +1,7 @@
 ## customized by me
 # draft blog posts 
 draft/
+.claude/
 
 # Logs
 logs

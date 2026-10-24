@@ -37,16 +37,18 @@ const About = ({ data, location }) => {
         <SEO title={"Blog"} />
         <section id="blog-page">
           <section className="category-filter">
-            <h4>Category:</h4>
-            <ul>
+            <h4 id="category-label">Category:</h4>
+            <ul role="group" aria-labelledby="category-label">
               {categories.map((item, index) => (
-                <li
-                  aria-hidden="true"
-                  className={isFilter === item ? "active" : null}
-                  onClick={e => setFilter(item)}
-                  key={index}
-                >
-                  {item}
+                <li key={index}>
+                  <button
+                    type="button"
+                    className="chip"
+                    aria-pressed={isFilter === item}
+                    onClick={e => setFilter(item)}
+                  >
+                    {item}
+                  </button>
                 </li>
               ))}
             </ul>

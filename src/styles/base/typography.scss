@@ -56,3 +56,10 @@ a {
 .display-font {
   font-family: $font-heading;
 }
+
+// Focus: one solid ring for every interactive element (main color, 14:1 on the page in both themes)
+:focus-visible {
+  outline: 2px solid var(--main-color);
+  outline-offset: 2px;
+  border-radius: $radius-small;
+}

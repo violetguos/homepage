@@ -43,16 +43,28 @@ export default function SocialShare({ fullURL, title, onLike, like }) {
         >
           <FacebookIcon width="21" height="21" fill="#1B77F2" />
         </a>
-        <Copy
-          onClick={copyClipboard}
-          width="21"
-          height="21"
-          className="copy-icon"
-        />
+        <button type="button" aria-label="Copy link" onClick={copyClipboard}>
+          <Copy
+            width="21"
+            height="21"
+            className="copy-icon"
+            aria-hidden="true"
+            focusable="false"
+          />
+        </button>
       </div>
       <div className="like-count">
-        <button onClick={onLike}>
-          <HeartIcon width="24" height="24" />
+        <button
+          type="button"
+          aria-label={`Like this post, ${like} likes`}
+          onClick={onLike}
+        >
+          <HeartIcon
+            width="24"
+            height="24"
+            aria-hidden="true"
+            focusable="false"
+          />
           {like}
         </button>
       </div>
