@@ -22,9 +22,9 @@ const About = ({ data, location }) => {
             </span>
           </p>
           <p>
-            Website is currently undergoing some facelift. In the meantime, you can check out my previous projects.
+            Website is currently undergoing some facelift. In the meantime, you
+            can check out my previous projects.
           </p>
-          
         </section>
       </Layout>
     </section>
