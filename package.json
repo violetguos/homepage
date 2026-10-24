@@ -69,6 +69,6 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "yarn format && gatsby build && gh-pages -d public -b master --repo git@github.com:violetguos/violetguos.github.io.git"
+    "deploy": "yarn format && gatsby build && gh-pages -d public -b master --repo ssh://git@github.com/violetguos/violetguos.github.io.git"
   }
 }
